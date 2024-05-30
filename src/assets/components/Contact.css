@@ -1,0 +1,138 @@
+.container6 {
+  min-height: 500px;
+  height: fit-content;
+  width : 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+h6 {
+text-align: center;
+color: var(--secondary-color);
+font-size: 33px;
+text-transform: uppercase;
+opacity: 0;
+transform: translateX(-200px);
+transition: all 0.7s ease-out;
+border-bottom: 2px solid var(--green);
+margin-bottom: 15px;
+}
+
+h6.fade-in {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.contact-par {
+  width: 50%;
+  text-align: center;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 0.7s ease-out;
+  color: var(--secondary-color);
+  margin-bottom: 0px;
+}
+
+.contact-par.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+form {
+max-width: 900px;
+width: 60%;
+text-align: center;
+margin: 20px auto;
+}
+form input, form textarea {
+border: 0;
+outline: 0;
+padding: 1em;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+display: block;
+width: 93%;
+margin-top: 1em;
+font-family: 'Merriweather', sans-serif;
+-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+resize: none;
+background-color: #f1f1f1;
+}
+form input:focus, form textarea:focus {
+-moz-box-shadow: 0 0px 2px var(--green) !important;
+-webkit-box-shadow: 0 0px 2px var(--green) !important;
+box-shadow: 0 0px 2px var(--green) !important;
+}
+form #input-submit {
+  width: 100% !important;
+  color: black;
+  background: var(--green);
+  cursor: pointer;
+}
+form #input-submit:hover {
+-moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+-webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+background: transparent;
+border: 1px solid var(--green);
+color: white;
+}
+form textarea {
+height: 126px;
+}
+
+.half {
+float: left;
+width: 48%;
+margin-bottom: 1em;
+}
+
+.right {
+width: 50%;
+}
+
+.left {
+margin-right: 2%;
+}
+
+.inputs {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.7s ease-out;
+}
+
+.inputs.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (max-width:800px) {
+  h6 {
+    margin-bottom: 20px;
+}
+
+.contact-par{
+  width: 80%;
+}
+
+
+.container6 {
+    width: 100%;
+    height: fit-content;
+}
+
+.half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+
+}
