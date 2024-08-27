@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --nav-load-time: 300ms;
+  --nav-link-load-time: 500ms;
+  --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time));
+  
+}
+
+* {
+  scrollbar-color: #202324 #454a4d;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: #ccd6f6;
+  --cont1-color: white;
+  --cont2-color: orange;
+  --background-color: rgba(46, 43, 43, 0.486);
+  --body-color: black;
+  --new-color: #0a192f;
+  --dark-navy: #020c1b;
+  --light-navy: #112240;
+  --green: #64ffda;
+  --green-tint: rgba(3, 3, 3, 0.1);
+  --slate: #8892b0;
+  --navy-shadow: rgba(2,12,27,0.7);
+  --dark-slate: #495670;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.dark-theme {
+  --primary-color: whitesmoke;
+  --secondary-color: black;
+  --cont1-color: orange;
+  --cont2-color: black;
+  --background-color: whitesmoke;
+  --body-color: white;
+}
+

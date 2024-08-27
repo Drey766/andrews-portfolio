@@ -1,0 +1,20 @@
+/* Styles for small screens */
+@media (max-width: 767px) {
+    .particle-canvas {
+      /* Define styles for small screens */
+    }
+  }
+  
+  /* Styles for medium to large screens */
+  @media (min-width: 768px) {
+    .particle-canvas {
+      /* Define styles for medium to large screens */
+    }
+  }
+
+
+
+  
+  #tsparticles > canvas {
+    position: relative !important;
+  }
